@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en" dir="ltr">
+  <meta charset="utf-8">
+  <title>HTML Assignment 1 - Semantic Elements</title>
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+  aside {
+    width: 40%;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    float: right;
+    background-color: peachpuff;
+    }
+  section.first {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px
+    }
+  section.second {
+    float: left;
+    padding: 10px;
+    }
+  section:after {
+    clear: both;
+    }
+  table.foot {
+    width: 100%;
+    padding: 10px;
+    background-color: thistle;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>What are semantic elements?</h1>
+    <h2>And why should you use them?</h2>
+  </header>
+  <section class=first>
+    <aside>With the finalization of HTML 5, some tags have been
+    deprecated and should not be used. These include:
+      <table>
+        <tr>
+          <td>
+            <ul>
+              <li>acronym</li>
+              <li>applet</li>
+              <li>basefont</li>
+              <li>big</li>
+              <li>center</li>
+              <li>dir</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>font</li>
+              <li>frame</li>
+              <li>frameset</li>
+              <li>noframes</li>
+              <li>strike</li>
+              <li>tt</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </aside>
+    <article>
+      In HTML, semantic elements are tags which clearly convey their purpose
+      and usage. Semantic elements not only make web development easier, they
+      also allow for greater readabitity. Websites using semantic tags are more
+      easily translated to different languages, maintain a consistent appearance
+      when viewed through different browsers, and are more accessible to
+      adaptive technologies for the visually impaired. Semantic HTML tags also
+      make website content more easily recognized by search engines. Non-semantic
+      tags, by contrast, are very broad and rely on additional code to specify
+      their precise function on the page. These include such tags as "div" and
+      "span". Although non-semantic elements are still usable in HTML 5, they
+      should be avoided in favor of semantic elements whenever possible.
+    </article>
+  </section>
+  <section class=second>
+    <h3>References</h3>
+    <p><a href="https://www.w3schools.com/html/default.asp">W3Schools.com</a>
+      <br>
+      <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">
+        An Overview of HTML 5 Semantics</a>
+      <br>
+      <a href="https://www.hongkiat.com/blog/html-5-semantics/">
+        A Look Into Proper HTML 5 Semantics</a>
+      <br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+        MDN Web Docs: HTML Elements Reference</a></p>
+  </section>
+  <footer>
+    <table class=foot>
+      <tr>
+        <td><h4>Author: Valerie Mehring </h4></td>
+        <td><p><time datetime="2020-10-14">October 14, 2020</time></p></td>
+      </tr>
+    </table>
+  </footer>
